@@ -1,0 +1,44 @@
+[
+  {
+    "patch_name": "CurvesToolValue.java.patch",
+    "sha256": "13d04fa699468cf448fe88d0bf41900df5a4591548c37f85b3b880af25e1c629",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  },
+  {
+    "patch_name": "CurvesValue.java.patch",
+    "sha256": "23e086d19d9a1057e1ec2dd5e216df93f9c434045a227d5e7a02ec5fea01e809",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  },
+  {
+    "patch_name": "DispatchQueue.java.patch",
+    "sha256": "20265461d6e29451604266da54a67385354326acb4ba81dead76bba7bbf0c7cc",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  },
+  {
+    "patch_name": "FilterGLThread.java.patch",
+    "sha256": "7211f9e8e5c4a1bd67cec4e1d988c19671544849bd98ce460d2fc35052423d50",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  },
+  {
+    "patch_name": "FilterShaders.java.patch",
+    "sha256": "7a94251131113c282f04a791cbb05bf0431b4938e2a60a368cdea2924da621a0",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  },
+  {
+    "patch_name": "SavedFilterState.java.patch",
+    "sha256": "e96bc1f5eca2213610aa02ef7fbf842110306909289cbb9b8ae4d060f8ea069f",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  },
+  {
+    "patch_name": "enhancement.cpp.patch",
+    "sha256": "c230cb7bde781e595f93f232093b2da73ac86f0380fb3a031eb979d4c73efee5",
+    "distribution": "Private full-context patch; omitted because deletion hunks contain excluded source",
+    "adaptation_ledger": "docs/extraction-manifest.json"
+  }
+]

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(telegram_photo_enhancement LANGUAGES CXX)
+add_library(telegram_photo_enhancement SHARED enhancement.cpp)
+target_compile_features(telegram_photo_enhancement PRIVATE cxx_std_17)
+target_compile_options(telegram_photo_enhancement PRIVATE -Wall -Wextra -Werror -Wno-unused-parameter -fvisibility=hidden)
+target_link_options(telegram_photo_enhancement PRIVATE "-Wl,-z,max-page-size=16384")
+target_link_libraries(telegram_photo_enhancement m)

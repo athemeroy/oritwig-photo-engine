@@ -1,0 +1,13 @@
+.gradle/
+**/build/
+local.properties
+artifacts/
+.cxx/
+__pycache__/
+
+.runtime/
+**/.cxx/
+*.log
+
+*.webm
+*.mp4

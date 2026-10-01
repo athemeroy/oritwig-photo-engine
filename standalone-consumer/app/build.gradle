@@ -1,0 +1,17 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.oritwig.aarproof'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    ndkVersion '27.2.12479018'
+    defaultConfig {
+        applicationId 'dev.oritwig.aarproof'
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName '0.0.1-proof'
+        testInstrumentationRunner 'dev.oritwig.aarproof.ConsumerProof'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+}
+dependencies { implementation files('libs/telegram-photo-engine-proof.aar') }

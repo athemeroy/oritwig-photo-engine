@@ -1,0 +1,36 @@
+Telegram photo-engine extraction proof (not an official Telegram product)
+
+Primary retained source: DrKLO/Telegram,
+commit f2908b14133bbffbf7ab04f641ecb5bfaf533242
+https://github.com/DrKLO/Telegram/tree/f2908b14133bbffbf7ab04f641ecb5bfaf533242
+
+Telegram's official Android source listing states GNU GPL version 2 or later:
+https://telegram.org/apps#source-code (verified 2026-10-01).
+The included upstream LICENSE preserves the GNU GPL version 2 text. Preserved
+DispatchQueue, MediaController and PhotoFilterView headers also explicitly grant
+version 2 or later and credit Nikolai Kudashov. The retained project-covered code
+and original integration adapters are provided under GPL-2.0-or-later, without
+warranty. No retained upstream GPL-v2-only file header was found in the reviewed
+inventory. This does not relicense separately licensed third-party components.
+FilterShaders.java, FilterGLThread.java, image.cpp and c_utils.h had no additional
+file-level copyright/license header in the pinned source. Retained code is not
+represented as newly authored or exclusively originated by Telegram.
+
+Modifications: package/model relocation, exclusion of Telegram protocol
+serialization, HDR/video/UI blur input APIs and optional skin smoothing/private
+tone mapping; Android lifecycle/logging adapters; injected size policy; headless
+EGL pbuffer; dedicated calcCDT JNI binding; input/buffer/lifecycle safety checks.
+See docs/extraction-manifest.json and provenance/ for URLs, Git blobs, output
+hashes and private full-patch hashes. Full excluded originals and deletion diffs
+are not part of this distributable source package.
+
+The optional smoothing/private tone-mapping block was conservatively omitted:
+research found recognizable Yu Ao MIT smoothing and Brad Larson GPUImage BSD-3
+lineage, but did not establish the immediate Java port chain. Their implementation
+is not included or replaced. A deprecated state compatibility field is rejected
+when nonzero and does not enable that feature. User adjustment curves from the
+separate PhotoFilterView model remain retained under their preserved GPL notice.
+
+No Telegram trademarks, assets, fonts, models, API credentials, native messaging
+engine, account services or network stack are bundled. No endorsement is implied.
+This is a bounded engineering/provenance record, not broad legal clearance.

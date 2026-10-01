@@ -1,0 +1,48 @@
+{
+  "commit": "f2908b14133bbffbf7ab04f641ecb5bfaf533242",
+  "outputs": [
+    {
+      "output": "engine/src/main/java/dev/oritwig/telegram/photo/FilterShaders.java",
+      "upstream_path": "TMessagesProj/src/main/java/org/telegram/ui/Components/FilterShaders.java",
+      "reason": "SDR-only constructor; injected max image side; logging/native/state relocation. Optional smoothing/private tone mapper and their shader/program/state path removed. Retained shader math is unchanged. Video branches are unreachable; no video input API.",
+      "sha256": "4ae76a7b7d8d9b8f4c713e134a8ad03c0ddbc340fe50760dad994efb5adc29db"
+    },
+    {
+      "output": "engine/src/main/java/dev/oritwig/telegram/photo/DispatchQueue.java",
+      "upstream_path": "TMessagesProj/src/main/java/org/telegram/messenger/DispatchQueue.java",
+      "reason": "Package/logging relocation plus bounded queue readiness; no messaging/accounts copied.",
+      "sha256": "204b54fd1f5a3144178186c92f8991c6ea44aaebe9919af97260ca262fb0cc7c"
+    },
+    {
+      "output": "engine/src/main/java/dev/oritwig/telegram/photo/CurvesValue.java",
+      "upstream_path": "TMessagesProj/src/main/java/org/telegram/ui/Components/PhotoFilterView.java",
+      "reason": "Exact nested curve class lifted from PhotoFilterView; only package/container and Telegram protocol serialization removed.",
+      "sha256": "eb98c9d649b8faa47a86866145687132768ef4df42319abb0ee267d86df11e4d"
+    },
+    {
+      "output": "engine/src/main/java/dev/oritwig/telegram/photo/CurvesToolValue.java",
+      "upstream_path": "TMessagesProj/src/main/java/org/telegram/ui/Components/PhotoFilterView.java",
+      "reason": "Exact nested curve class lifted from PhotoFilterView; only package/container and Telegram protocol serialization removed.",
+      "sha256": "1ca73a4fe2ff251fdb5b2b4c8c9030516c3fd9c9b28ccdab681026d56dfa5c18"
+    },
+    {
+      "output": "engine/src/main/java/dev/oritwig/telegram/photo/SavedFilterState.java",
+      "upstream_path": "TMessagesProj/src/main/java/org/telegram/messenger/MediaController.java",
+      "reason": "Exact SavedFilterState data/isEmpty extracted; protocol serialization excluded. No MediaController shell or stub.",
+      "sha256": "cfbcb601e35acdf611af21f042f6aaedc313ea847db018d805289a18f89c8494"
+    },
+    {
+      "output": "engine/src/main/java/dev/oritwig/telegram/photo/FilterGLThread.java",
+      "upstream_path": "TMessagesProj/src/main/java/org/telegram/ui/Components/FilterGLThread.java",
+      "reason": "Exclude video/HDR/UI blur; real still-image EGL/GLES/readback retained. Add EGL pbuffer platform integration and bounded error/lifecycle handling. SurfaceTexture ownership follows upstream.",
+      "sha256": "fad420a542c88536c5e1034b5e216e983c2a2961665c45a70e8dc5d29f53c35a"
+    },
+    {
+      "output": "engine/src/main/cpp/enhancement.cpp",
+      "upstream_path": "TMessagesProj/jni/image.cpp",
+      "additional_input": "TMessagesProj/jni/c_utils.h",
+      "reason": "Exact calcCDT and constants only; JNI symbol relocation and direct-buffer/dimension safety checks; MIN/MAX macros copied from c_utils.h.",
+      "sha256": "3c610a4e1e8b24e285ad71fb78be9e2efd5244d53b62ec5a8e6bb78ad5571f54"
+    }
+  ]
+}
